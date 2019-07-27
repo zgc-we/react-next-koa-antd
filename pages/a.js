@@ -20,7 +20,7 @@ A.getInitialProps = async () => {// 初始化数据，但是只有pages下的js�
             resolve({
                 name: 'jokcy'
             })
-        },1000)
+        },0)
     });
     return await promise;
 }
