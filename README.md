@@ -1,10 +1,11 @@
-# 项目安装
+#项目安装
 
 ```
 yarn install 下载包
 npm run dev 运行
 npm run build 打包
 ```
+---
 # [Koa](https://chenshenhai.github.io/koa2-note/)
 
 ## Koa 介绍
@@ -19,7 +20,7 @@ koa只是提供了一种不同于connect的中间件解决方案，另外再加�
 ```
 
 ## Koa 常用中间件
-```
+```key javascript
 var path = require('path')
 var route= require('koa-route');//路由
 var koa = require('koa');
