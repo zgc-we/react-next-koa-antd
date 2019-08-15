@@ -104,7 +104,7 @@ app.listen = function(){
 ```
 ---
 **listen()时，执行callback(),里面返回function(req,res)回调，然后是对node原生的监听listen().也就是说，上面代码相当于**
-(```)
+```
 var http = require("http");
 
 http.createServer(function(request, response) {
