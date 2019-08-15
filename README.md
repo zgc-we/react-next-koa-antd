@@ -20,7 +20,7 @@ koa只是提供了一种不同于connect的中间件解决方案，另外再加�
 ```
 
 ## Koa 常用中间件
-```key javascript
+```javascript
 var path = require('path')
 var route= require('koa-route');//路由
 var koa = require('koa');
