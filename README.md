@@ -44,7 +44,7 @@ app.listen(8000);
 ```
 
 ## Koa 中间件的实现，简单的实现一个打印组件实现
-```
+```javascript
 var koa = require('koa');
 var app = koa();
 //添加中间件1
@@ -81,7 +81,7 @@ GET /favicon.ico - 5
 **说明**
 app.use()来添加中间件。use函数接受一个generator function。这个generator function就是一个中间件。generator function有一个参数next。这个next是下一个中间件generator function的对应generator对象。yield next;调用下一个中间件的代码。具体代码如下：
 
-```
+```javascript
 app.callback = function(){
   var mw = [respond].concat(this.middleware);
   var gen = compose(mw);
@@ -105,7 +105,7 @@ app.listen = function(){
 ```
 ---
 **listen()时，执行callback(),里面返回function(req,res)回调，然后是对node原生的监听listen().也就是说，上面代码相当于**
-```
+```javascript
 var http = require("http");
 
 http.createServer(function(request, response) {
