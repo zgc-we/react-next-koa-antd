@@ -117,6 +117,6 @@ http.createServer(function(request, response) {
 ```
 
 ## 插件基本的运行流程就是如下图
-<p align="center"><img src="https://images0.cnblogs.com/blog/625679/201501/112008169539165.jpg" width="80%"/></p>
+<p align="center"><img src="https://images0.cnblogs.com/blog/625679/201501/112008169539165.jpg" width="100%"/></p>
 
 
